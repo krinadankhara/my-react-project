@@ -7,7 +7,7 @@ const MyTuits = () => {
     const findMyTuits = () =>
         service.findTuitByUser("my")
             .then(tuits => setTuits(tuits));
-    useEffect(findMyTuits, []);
+    useEffect(findMyTuits, [])
     return(
         <Tuits tuits={tuits}
                refreshTuits={findMyTuits}/>
